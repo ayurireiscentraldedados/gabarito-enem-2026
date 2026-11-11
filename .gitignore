@@ -1,0 +1,20 @@
+# Dependências e arquivos locais/temporários
+node_modules/
+__pycache__/
+*.py[cod]
+.netlify/
+.env
+*.log
+
+# Capturas de tela e scripts de debug locais
+/*.png
+!img/*.png
+test_*.js
+check_*.js
+verify_*.js
+take_shots.js
+comentario_azul.html
+full_scraped_provas.json
+provas_analysis.json
+package-lock.json
+

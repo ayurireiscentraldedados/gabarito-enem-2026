@@ -1,0 +1,87 @@
+name: Monitor ENEM 2026 - 2º Dia
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Modo de execução"
+        required: true
+        default: "test-once"
+        type: choice
+        options:
+          - test-once
+          - live-deploy-once
+          - continuous
+      max_minutes:
+        description: "Duração máxima no modo contínuo (minutos, máx 330)"
+        required: false
+        default: "310"
+        type: string
+  schedule:
+    # BRT = UTC-3 | Domingo (day-of-week 0)
+    # 17:17 BRT = 20:17 UTC (janela antes das 18h)
+    - cron: "17 20 * * 0"
+    # 18:37 BRT = 21:37 UTC (backup caso o cron das 17:17 sofra atraso no GitHub)
+    - cron: "37 21 * * 0"
+
+concurrency:
+  group: enem-2026-dia2-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências Python
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Configurar Node.js e Netlify CLI
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.mode != 'test-once' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Instalar Netlify CLI
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.mode != 'test-once' }}
+        run: npm install -g netlify-cli
+
+      - name: Configurar identidade Git do bot
+        run: |
+          git config user.name "enem-monitor-bot[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Teste rápido sem deploy (test-once)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'test-once' }}
+        run: python -u monitor_dia2.py --once --no-deploy
+
+      - name: Atualização única com deploy (live-deploy-once)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'live-deploy-once' }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: python -u monitor_dia2.py --once --git-sync
+
+      - name: Monitoramento contínuo ao vivo (Domingo)
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.mode == 'continuous' }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          MAX_MIN="${{ inputs.max_minutes || '310' }}"
+          if [ "$MAX_MIN" -gt 330 ] 2>/dev/null; then MAX_MIN="330"; fi
+          python -u monitor_dia2.py --interval 60 --max-minutes "$MAX_MIN" --until-brt "23:45" --git-sync
+

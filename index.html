@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Central de Dados O POVO+ | Gabarito Extraoficial ENEM 2026 - Farias Brito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261111_touch_fix">
+  <script>
+    try {
+      if (window.self !== window.top || window.location.search.indexOf('embed') !== -1) {
+        document.documentElement.classList.add('is-embed');
+      }
+    } catch(e) {
+      document.documentElement.classList.add('is-embed');
+    }
+  </script>
+</head>
+<body class="mode-gabarito">
+
+  <!-- CABEÇALHO SLIM OPOVO+ & FARIAS BRITO -->
+  <header class="slim-header">
+    <div class="header-accent-line"></div>
+    <div class="slim-container">
+      <div class="header-content">
+        <div class="brand-section">
+          <!-- Bloco de Co-Branding: O POVO+ & Farias Brito -->
+          <div class="brand-collab-group">
+            <div class="brand-vector-logo" aria-label="Central de Dados O POVO+">
+              Central de Dados O POVO<span class="brand-plus">+</span>
+            </div>
+            
+            <span class="collab-divider" aria-hidden="true">✕</span>
+
+            <div class="brand-fb-badge" title="Resoluções comentadas da Organização Educacional Farias Brito">
+              <img src="img/logo_farias_brito.png" alt="Farias Brito" class="fb-badge-img">
+              <span class="fb-badge-label">Farias Brito</span>
+            </div>
+          </div>
+
+          <!-- Separador Vertical Nítido -->
+          <div class="brand-divider" aria-hidden="true"></div>
+
+          <!-- Título e Edição do Exame -->
+          <div class="header-exam-title">
+            <span class="hide-on-mobile">Gabarito Extraoficial </span>
+            <span class="exam-title-badge">ENEM 2026</span>
+          </div>
+
+          <!-- Botão Tela Cheia no Mobile -->
+          <button type="button" id="btnFullscreenMobile" class="btn-fullscreen-toggle btn-fullscreen-mobile" title="Alternar tela cheia" aria-label="Alternar tela cheia">
+            <svg class="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            <svg class="icon-compress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+          </button>
+        </div>
+
+        <div class="header-right-pack">
+          <!-- ABA PRINCIPAL: VER GABARITO vs MODO TREINO -->
+          <nav class="main-mode-tabs" role="tablist" aria-label="Modo de visualização">
+            <button type="button" class="mode-tab-btn active" data-mode="gabarito" title="Ver as respostas do Farias Brito diretamente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              Ver gabarito
+            </button>
+            <button type="button" class="mode-tab-btn" data-mode="treino" title="Ocultar respostas para você mesmo marcar e conferir">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              Modo treino
+            </button>
+          </nav>
+
+          <!-- Botão Tela Cheia no Desktop -->
+          <button type="button" id="btnFullscreenDesktop" class="btn-fullscreen-toggle btn-fullscreen-desktop" title="Alternar tela cheia" aria-label="Alternar tela cheia">
+            <svg class="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            <svg class="icon-compress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+            <span class="fullscreen-btn-label">Tela cheia</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTAINER PRINCIPAL -->
+  <main class="slim-container">
+    <section class="slim-controls-bar" aria-label="Dias, Cadernos e Filtros">
+
+      <!-- 0. SELETOR DE DIA DO EXAME (1º DIA vs 2º DIA) -->
+      <div class="day-switch-row" role="tablist" aria-label="Dia de prova ENEM 2026">
+        <button type="button" class="day-tab-btn active" data-dia="1" role="tab" aria-selected="true">
+          <span class="day-tab-text">
+            <strong class="day-tab-main">1º Dia</strong>
+            <span class="day-tab-sub hide-on-xs">Linguagens, Humanas e Redação</span>
+            <span class="day-tab-sub show-on-xs">01–90 + Red.</span>
+          </span>
+          <span class="day-status-pill is-ready" id="day1StatusPill">91/91</span>
+        </button>
+        <button type="button" class="day-tab-btn" data-dia="2" role="tab" aria-selected="false">
+          <span class="day-tab-text">
+            <strong class="day-tab-main">2º Dia</strong>
+            <span class="day-tab-sub hide-on-xs">Natureza e Matemática</span>
+            <span class="day-tab-sub show-on-xs">91–180</span>
+          </span>
+          <span class="day-status-pill is-waiting" id="day2StatusPill">Dom 18h</span>
+        </button>
+      </div>
+
+      <!-- 1. SELETOR SLIM DE CADERNOS (AZUL, VERDE, AMARELA, BRANCA / CINZA) -->
+      <div class="exam-pills-row" role="radiogroup" aria-label="Selecione o caderno da sua prova">
+        <button type="button" class="exam-pill-btn selected" data-prova="azul">
+          <span class="pill-color-indicator"></span>
+          Prova Azul
+        </button>
+        <button type="button" class="exam-pill-btn" data-prova="rosa">
+          <span class="pill-color-indicator"></span>
+          Prova Verde
+        </button>
+        <button type="button" class="exam-pill-btn" data-prova="amarela">
+          <span class="pill-color-indicator"></span>
+          Prova Amarela
+        </button>
+        <button type="button" class="exam-pill-btn" data-prova="branca">
+          <span class="pill-color-indicator"></span>
+          Prova Branca
+        </button>
+        <button type="button" class="exam-pill-btn" data-prova="cinza" style="display:none;">
+          <span class="pill-color-indicator"></span>
+          Prova Cinza
+        </button>
+      </div>
+
+      <!-- AVISO AO VIVO DO 2º DIA -->
+      <div class="day2-live-notice" id="day2LiveNotice" style="display:none;">
+        <div class="day2-notice-left">
+          <span class="day2-live-dot" id="day2LiveDot"></span>
+          <span id="day2LiveText">Gabarito e resoluções do 2º Dia serão publicados neste domingo a partir das 18h.</span>
+        </div>
+        <button type="button" id="btnRefreshLive" class="btn-refresh-live" style="display:none;">Atualizar</button>
+      </div>
+
+      <!-- 2. PLACAR DO MODO TREINO (COM TRAVAS E AÇÕES) -->
+      <div class="treino-score-bar" id="treinoScoreBar">
+        <div class="score-pills-pack">
+          <span style="color:var(--text-muted); font-size:0.75rem;">Seu desempenho:</span>
+          <span class="pill-hit" id="scoreHits">0 acertos</span>
+          <span class="pill-miss" id="scoreMisses">0 erros</span>
+          <span class="pill-status" id="scoreTotal">0 de 90 respondidas (0%)</span>
+        </div>
+        <div class="treino-actions-wrap">
+          <button type="button" id="btnRevealAll" class="btn-reveal-all" title="Revelar todas as respostas do simulador">Revelar gabarito</button>
+          <button type="button" id="btnResetScore" class="btn-reset-clean" title="Zerar marcações">Limpar respostas</button>
+        </div>
+      </div>
+
+      <!-- 3. BARRA DE FILTROS & LÍNGUA ESTRANGEIRA -->
+      <div class="slim-filter-toolbar">
+        <div class="filter-pills-group" role="tablist">
+          <button type="button" class="filter-btn-slim active" data-area="todas">Todas</button>
+          <button type="button" class="filter-btn-slim" data-area="linguagens" data-day-scope="1">Linguagens (01-45)</button>
+          <button type="button" class="filter-btn-slim" data-area="humanas" data-day-scope="1">Ciências Humanas (46-90)</button>
+          <button type="button" class="filter-btn-slim" data-area="redacao" data-day-scope="1">Redação</button>
+          <button type="button" class="filter-btn-slim" data-area="natureza" data-day-scope="2" style="display:none;">Ciências da Natureza (91-135)</button>
+          <button type="button" class="filter-btn-slim" data-area="matematica" data-day-scope="2" style="display:none;">Matemática (136-180)</button>
+          <button type="button" class="filter-btn-slim" data-area="erros" id="tabErros" style="display:none;">Meus erros</button>
+        </div>
+
+        <div class="right-side-tools">
+          <div class="lang-switch-slim" id="langSwitchWrap" role="group" aria-label="Língua Estrangeira">
+            <button type="button" class="lang-btn-slim active" data-lang="Inglês">Inglês (01-05)</button>
+            <button type="button" class="lang-btn-slim" data-lang="Espanhol">Espanhol (01-05)</button>
+          </div>
+
+          <div class="search-box-slim">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="inputSearch" placeholder="Buscar nº..." aria-label="Buscar questão">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 4. TABELA DO GABARITO / CARTÃO-RESPOSTA SLIM -->
+    <section class="table-section">
+      <div class="table-meta-row">
+        <span class="meta-title-label" id="sectionTitleLabel">Caderno • Prova Azul</span>
+        <span class="meta-count-label" id="sectionCountLabel">91 itens</span>
+      </div>
+
+      <div id="slimGrid" class="slim-grid">
+        <!-- Renderizado dinamicamente via app.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       MODAL DE RESOLUÇÃO COMENTADA ULTRA-SLIM & RESTRIÇÕES ANTI-SPOILER
+       ======================================================================== -->
+  <div id="embedModalBackdrop" class="embed-modal-backdrop" aria-hidden="true"></div>
+  <dialog id="modalResolution" aria-labelledby="modalQuestaoTitle">
+    <!-- 1. CABEÇALHO ULTRA-SLIM UNIFICADO -->
+    <div class="modal-header-slim">
+      <div class="modal-title-pack">
+        <h2 id="modalQuestaoTitle" class="modal-q-title">Questão 001</h2>
+        <span id="modalExamTag" class="modal-exam-tag">Prova Azul</span>
+        <span id="modalSubArea" class="modal-discipline-tag">Inglês</span>
+        <span id="modalGabaritoPill" class="modal-gab-status">Gabarito Extraoficial FB: B</span>
+      </div>
+
+      <!-- Equivalência Compacta Inline entre Cadernos -->
+      <div class="modal-equiv-inline" id="modalEquivTags" role="group" aria-label="Equivalência entre cadernos">
+        <!-- Injetado dinamicamente via JS como pills ultra-slim: AZ 001 | VD 002 | AM 004 | BR 002 -->
+      </div>
+
+      <div class="modal-tools-slim">
+        <!-- Controle de Zoom Segmentado Ultra-Slim -->
+        <div class="zoom-segmented-control" role="group" aria-label="Controle de Zoom">
+          <button type="button" id="btnZoomOut" class="zoom-seg-btn" title="Diminuir zoom (−)">−</button>
+          <button type="button" id="btnZoomReset" class="zoom-seg-value" title="Redefinir para 100%">100%</button>
+          <button type="button" id="btnZoomIn" class="zoom-seg-btn" title="Aumentar zoom (+)">+</button>
+        </div>
+
+        <a id="btnDownloadImage" href="#" download class="btn-tool-action" title="Baixar resolução completa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        </a>
+
+        <button type="button" id="btnCloseModal" class="btn-modal-close" aria-label="Fechar janela" title="Fechar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. ÁREA DE VISUALIZAÇÃO COM FOLHA EDITORIAL E CORTINA ANTI-SPOILER -->
+    <div class="modal-scroll-body" id="modalViewerScroll">
+      
+      <!-- CORTINA ANTI-SPOILER DO MODO TREINO (IMPEDE TOTALMENTE VISUALIZAÇÃO E SCROLL) -->
+      <div class="spoiler-curtain" id="modalSpoilerCurtain" style="display:none;">
+        <div class="curtain-card">
+          <div class="curtain-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="curtain-title">Resolução protegida</h3>
+          <p class="curtain-desc">Você está no <strong>Modo Treino</strong>. Marque sua alternativa para conferir seu acerto e desbloquear a resolução comentada:</p>
+          
+          <div class="curtain-bubbles-grid" id="curtainBubbles">
+            <button type="button" class="curtain-bubble-btn" data-curtain-letra="A">A</button>
+            <button type="button" class="curtain-bubble-btn" data-curtain-letra="B">B</button>
+            <button type="button" class="curtain-bubble-btn" data-curtain-letra="C">C</button>
+            <button type="button" class="curtain-bubble-btn" data-curtain-letra="D">D</button>
+            <button type="button" class="curtain-bubble-btn" data-curtain-letra="E">E</button>
+          </div>
+
+          <button type="button" id="btnCurtainBypass" class="btn-bypass-spoiler">
+            Revelar gabarito e resolução sem responder
+          </button>
+        </div>
+      </div>
+
+      <!-- FOLHA DA QUESTÃO (OCULTA E DESCARREGADA NO DOM QUANDO BLOQUEADA NO MODO TREINO) -->
+      <div class="resolution-sheet-container" id="resolutionSheetContainer">
+        <img id="modalViewerImg" src="" alt="Resolução comentada Farias Brito">
+      </div>
+    </div>
+
+    <!-- 3. BARRA DE NAVEGAÇÃO INFERIOR ULTRA-SLIM -->
+    <div class="modal-bottom-bar">
+      <button type="button" id="btnPrevQuestao" class="btn-arrow-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+        <span>Anterior</span>
+      </button>
+
+      <div class="nav-counter-pack">
+        <span id="modalItemIndex" class="counter-text">1 de 91</span>
+      </div>
+
+      <button type="button" id="btnNextQuestao" class="btn-arrow-nav">
+        <span>Próxima</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </dialog>
+
+  <script src="enem_data.js?v=20261111_touch_fix"></script>
+  <script src="app.js?v=20261111_touch_fix"></script>
+</body>
+</html>

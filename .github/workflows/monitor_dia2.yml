@@ -73,7 +73,7 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: python -u monitor_dia2.py --once --git-sync
+        run: python -u monitor_dia2.py --once --force-deploy --git-sync
 
       - name: Monitoramento contínuo ao vivo (Domingo)
         if: ${{ github.event_name != 'workflow_dispatch' || inputs.mode == 'continuous' }}

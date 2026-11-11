@@ -212,7 +212,7 @@ def sincronizar_git():
     return False
 
 
-def executar_ciclo(fazer_deploy=True, git_sync=False):
+def executar_ciclo(fazer_deploy=True, git_sync=False, force_deploy=False):
     sig_remota, cont_remota, houve_erro_parcial = assinatura_remota_dia2()
     if sig_remota is None:
         print(f"[{agora_str()}] Falha total de rede ao consultar Farias Brito. Tentando novamente no proximo ciclo.")
@@ -228,6 +228,9 @@ def executar_ciclo(fazer_deploy=True, git_sync=False):
 
     if sig_remota == sig_local:
         print(f"[{agora_str()}] Conexao OK com Farias Brito. Sem novidades no 2o Dia ({resumo}).")
+        if force_deploy and fazer_deploy:
+            deploy_ok = publicar_netlify()
+            return deploy_ok, cont_remota, deploy_ok
         return False, cont_remota, True
 
     if houve_erro_parcial and sum(max(0, v) for v in cont_remota.values()) < sum(cont_local.values()):
@@ -304,14 +307,19 @@ def main():
     parser.add_argument("--interval", type=int, default=60, help="Intervalo em segundos entre verificacoes (padrao: 60)")
     parser.add_argument("--once", action="store_true", help="Executa apenas 1 verificacao e encerra")
     parser.add_argument("--no-deploy", action="store_true", help="Gera os dados/imagens locais sem rodar deploy no Netlify")
+    parser.add_argument("--force-deploy", action="store_true", help="Forca deploy no Netlify mesmo sem mudancas (ideal para teste em CI)")
     parser.add_argument("--git-sync", action="store_true", help="Faz commit e push de atualizacoes detectadas para o Git")
     parser.add_argument("--max-minutes", type=float, default=0, help="Encerra o loop apos N minutos (util em CI/GitHub Actions)")
     parser.add_argument("--until-brt", type=str, default="", help="Encerra o loop ao atingir HH:MM no horario de Brasilia (BRT)")
     args = parser.parse_args()
 
     if args.once:
-        _, _, conectou = executar_ciclo(fazer_deploy=not args.no_deploy, git_sync=args.git_sync)
-        if not conectou:
+        _, _, ok = executar_ciclo(
+            fazer_deploy=not args.no_deploy,
+            git_sync=args.git_sync,
+            force_deploy=args.force_deploy,
+        )
+        if not ok:
             sys.exit(2)
     else:
         monitorar_em_loop(

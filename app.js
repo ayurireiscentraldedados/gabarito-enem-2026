@@ -17,6 +17,7 @@
   const rawProvaParam = (urlParams.get("prova") || "azul").toLowerCase();
   const initialProva = rawProvaParam === "verde" ? "rosa" : rawProvaParam;
   const initialMode = (urlParams.get("modo") || "gabarito").toLowerCase();
+  const isModeLocked = urlParams.get("fixo") === "1" || urlParams.get("trava") === "1";
   const rawDiaParam = urlParams.get("dia");
   let initialDia = rawDiaParam === "2" ? 2 : rawDiaParam === "1" ? 1 : initialProva === "cinza" ? 2 : 1;
 
@@ -62,6 +63,14 @@
   const body = document.body;
   if (isEmbed) {
     body.classList.add("is-embed");
+  }
+  if (isModeLocked) {
+    root.classList.add("is-mode-locked");
+    body.classList.add("is-mode-locked");
+    const headerSub = document.querySelector(".header-exam-title .hide-on-mobile");
+    if (headerSub && state.modo === "treino") {
+      headerSub.textContent = "Simulador Modo Treino ";
+    }
   }
   const gridEl = document.getElementById("slimGrid");
   const inputSearch = document.getElementById("inputSearch");
@@ -329,6 +338,9 @@
 
   // Atualiza Modo (Leitura vs Treino)
   function aplicarModo(modo) {
+    if (isModeLocked && ["gabarito", "treino"].includes(initialMode)) {
+      modo = initialMode;
+    }
     state.modo = modo;
     body.classList.toggle("mode-gabarito", modo === "gabarito");
 

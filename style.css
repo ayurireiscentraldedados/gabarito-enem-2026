@@ -621,6 +621,21 @@ body.is-embed:not(.is-fullscreen) .slim-header {
   flex-shrink: 0;
 }
 
+/* Modo Fixo Exclusivo (?fixo=1): separa Somente Gabarito de Somente Modo Treino */
+html.is-mode-locked .main-mode-tabs,
+body.is-mode-locked .main-mode-tabs,
+html.is-mode-locked #btnRevealAll,
+body.is-mode-locked #btnRevealAll {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  html.is-mode-locked .header-right-pack,
+  body.is-mode-locked .header-right-pack {
+    display: none !important;
+  }
+}
+
 /* Botões de Tela Cheia */
 .btn-fullscreen-toggle {
   font-family: var(--font-condensed);

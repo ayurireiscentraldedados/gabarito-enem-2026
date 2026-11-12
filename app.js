@@ -69,7 +69,7 @@
     body.classList.add("is-mode-locked");
     const headerSub = document.querySelector(".header-exam-title .hide-on-mobile");
     if (headerSub && state.modo === "treino") {
-      headerSub.textContent = "Simulador Modo Treino ";
+      headerSub.textContent = "Gabarito Interativo ";
     }
   }
   const gridEl = document.getElementById("slimGrid");

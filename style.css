@@ -1257,6 +1257,12 @@ body.is-fullscreen .icon-compress {
   }
 }
 
+@media (min-width: 641px) {
+  body.is-embed:not(.is-fullscreen) .slim-grid {
+    column-count: 2;
+  }
+}
+
 @media (max-width: 640px) {
   .slim-grid {
     column-count: 1 !important;

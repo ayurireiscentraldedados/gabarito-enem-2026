@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-15T18:45:31-03:00",
+  "atualizado_em": "2026-11-15T18:46:46-03:00",
   "ano": 2026,
   "dias_disponiveis": [
     1,
@@ -1816,20 +1816,20 @@
           }
         },
         {
-          "id": "azul_d2_097",
-          "id_canonico": null,
+          "id": "azul_097_3_097",
+          "id_canonico": "3_097",
           "dia": 2,
           "numero": "097",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "D",
+          "publicada": true,
           "area": "CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
           "sub_area": "Ciências da Natureza",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "3/097.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/3/097.gif",
+          "arquivo_local": "imagens_resolucoes/3_097.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 1855
           }
         },
         {
@@ -4938,20 +4938,20 @@
           }
         },
         {
-          "id": "rosa_d2_094",
-          "id_canonico": null,
+          "id": "rosa_094_3_097",
+          "id_canonico": "3_097",
           "dia": 2,
           "numero": "094",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "D",
+          "publicada": true,
           "area": "CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
           "sub_area": "Ciências da Natureza",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "3/097.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/3/097.gif",
+          "arquivo_local": "imagens_resolucoes/3_097.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 1855
           }
         },
         {
@@ -8060,20 +8060,20 @@
           }
         },
         {
-          "id": "amarela_d2_091",
-          "id_canonico": null,
+          "id": "amarela_091_3_097",
+          "id_canonico": "3_097",
           "dia": 2,
           "numero": "091",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "D",
+          "publicada": true,
           "area": "CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
           "sub_area": "Ciências da Natureza",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "3/097.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/3/097.gif",
+          "arquivo_local": "imagens_resolucoes/3_097.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 1855
           }
         },
         {
@@ -11395,20 +11395,20 @@
           }
         },
         {
-          "id": "cinza_d2_100",
-          "id_canonico": null,
+          "id": "cinza_100_3_097",
+          "id_canonico": "3_097",
           "dia": 2,
           "numero": "100",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "D",
+          "publicada": true,
           "area": "CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
           "sub_area": "Ciências da Natureza",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "3/097.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/3/097.gif",
+          "arquivo_local": "imagens_resolucoes/3_097.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 1855
           }
         },
         {
@@ -14503,6 +14503,24 @@
         "branca": "073"
       }
     },
+    "3_097": {
+      "id_canonico": "3_097",
+      "dia": 2,
+      "gabarito_oficial_extra": "D",
+      "sub_area": "Ciências da Natureza",
+      "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/3/097.gif",
+      "arquivo_local": "imagens_resolucoes/3_097.gif",
+      "dimensoes": {
+        "largura": 466,
+        "altura": 1855
+      },
+      "posicoes_por_prova": {
+        "azul": "097",
+        "rosa": "094",
+        "amarela": "091",
+        "cinza": "100"
+      }
+    },
     "3_098": {
       "id_canonico": "3_098",
       "dia": 2,
@@ -14589,12 +14607,12 @@
     },
     "dia2": {
       "total": 90,
-      "publicadas": 4,
+      "publicadas": 5,
       "por_cor": {
-        "azul": 4,
-        "rosa": 4,
-        "amarela": 4,
-        "cinza": 4
+        "azul": 5,
+        "rosa": 5,
+        "amarela": 5,
+        "cinza": 5
       }
     }
   }

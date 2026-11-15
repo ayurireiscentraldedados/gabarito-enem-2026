@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-15T20:03:08-03:00",
+  "atualizado_em": "2026-11-15T20:04:22-03:00",
   "ano": 2026,
   "dias_disponiveis": [
     1,
@@ -3023,20 +3023,20 @@
           }
         },
         {
-          "id": "azul_d2_168",
-          "id_canonico": null,
+          "id": "azul_168_4_168",
+          "id_canonico": "4_168",
           "dia": 2,
           "numero": "168",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "A",
+          "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "4/168.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/4/168.gif",
+          "arquivo_local": "imagens_resolucoes/4_168.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 762
           }
         },
         {
@@ -6264,20 +6264,20 @@
           }
         },
         {
-          "id": "rosa_d2_172",
-          "id_canonico": null,
+          "id": "rosa_172_4_168",
+          "id_canonico": "4_168",
           "dia": 2,
           "numero": "172",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "A",
+          "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "4/168.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/4/168.gif",
+          "arquivo_local": "imagens_resolucoes/4_168.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 762
           }
         },
         {
@@ -9539,20 +9539,20 @@
           }
         },
         {
-          "id": "amarela_d2_178",
-          "id_canonico": null,
+          "id": "amarela_178_4_168",
+          "id_canonico": "4_168",
           "dia": 2,
           "numero": "178",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "A",
+          "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "4/168.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/4/168.gif",
+          "arquivo_local": "imagens_resolucoes/4_168.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 762
           }
         },
         {
@@ -12568,20 +12568,20 @@
           }
         },
         {
-          "id": "cinza_d2_169",
-          "id_canonico": null,
+          "id": "cinza_169_4_168",
+          "id_canonico": "4_168",
           "dia": 2,
           "numero": "169",
-          "gabarito": null,
-          "publicada": false,
+          "gabarito": "A",
+          "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
-          "imagem_rel": "",
-          "imagem_url": "",
-          "arquivo_local": "",
+          "imagem_rel": "4/168.gif",
+          "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/4/168.gif",
+          "arquivo_local": "imagens_resolucoes/4_168.gif",
           "dimensoes": {
-            "largura": null,
-            "altura": null
+            "largura": 466,
+            "altura": 762
           }
         },
         {
@@ -15583,6 +15583,24 @@
         "cinza": "168"
       }
     },
+    "4_168": {
+      "id_canonico": "4_168",
+      "dia": 2,
+      "gabarito_oficial_extra": "A",
+      "sub_area": "Matemática",
+      "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/4/168.gif",
+      "arquivo_local": "imagens_resolucoes/4_168.gif",
+      "dimensoes": {
+        "largura": 466,
+        "altura": 762
+      },
+      "posicoes_por_prova": {
+        "azul": "168",
+        "rosa": "172",
+        "amarela": "178",
+        "cinza": "169"
+      }
+    },
     "4_170": {
       "id_canonico": "4_170",
       "dia": 2,
@@ -15669,12 +15687,12 @@
     },
     "dia2": {
       "total": 90,
-      "publicadas": 64,
+      "publicadas": 65,
       "por_cor": {
-        "azul": 64,
-        "rosa": 64,
-        "amarela": 64,
-        "cinza": 64
+        "azul": 65,
+        "rosa": 65,
+        "amarela": 65,
+        "cinza": 65
       }
     }
   }

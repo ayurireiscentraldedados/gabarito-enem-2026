@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-15T21:59:28-03:00",
+  "atualizado_em": "2026-11-15T22:10:08-03:00",
   "ano": 2026,
   "dias_disponiveis": [
     1,
@@ -2874,7 +2874,7 @@
           "id_canonico": "4_159",
           "dia": 2,
           "numero": "159",
-          "gabarito": "C",
+          "gabarito": "X",
           "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
@@ -2883,7 +2883,7 @@
           "arquivo_local": "imagens_resolucoes/4_159.gif",
           "dimensoes": {
             "largura": 466,
-            "altura": 1198
+            "altura": 1216
           }
         },
         {
@@ -6030,7 +6030,7 @@
           "id_canonico": "4_159",
           "dia": 2,
           "numero": "158",
-          "gabarito": "C",
+          "gabarito": "X",
           "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
@@ -6039,7 +6039,7 @@
           "arquivo_local": "imagens_resolucoes/4_159.gif",
           "dimensoes": {
             "largura": 466,
-            "altura": 1198
+            "altura": 1216
           }
         },
         {
@@ -9118,7 +9118,7 @@
           "id_canonico": "4_159",
           "dia": 2,
           "numero": "153",
-          "gabarito": "C",
+          "gabarito": "X",
           "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
@@ -9127,7 +9127,7 @@
           "arquivo_local": "imagens_resolucoes/4_159.gif",
           "dimensoes": {
             "largura": 466,
-            "altura": 1198
+            "altura": 1216
           }
         },
         {
@@ -12487,7 +12487,7 @@
           "id_canonico": "4_159",
           "dia": 2,
           "numero": "164",
-          "gabarito": "C",
+          "gabarito": "X",
           "publicada": true,
           "area": "MATEMÁTICA E SUAS TECNOLOGIAS",
           "sub_area": "Matemática",
@@ -12496,7 +12496,7 @@
           "arquivo_local": "imagens_resolucoes/4_159.gif",
           "dimensoes": {
             "largura": 466,
-            "altura": 1198
+            "altura": 1216
           }
         },
         {
@@ -15676,13 +15676,13 @@
     "4_159": {
       "id_canonico": "4_159",
       "dia": 2,
-      "gabarito_oficial_extra": "C",
+      "gabarito_oficial_extra": "X",
       "sub_area": "Matemática",
       "imagem_url": "https://comentarioenem.com.br/arquivos/questoes/4/159.gif",
       "arquivo_local": "imagens_resolucoes/4_159.gif",
       "dimensoes": {
         "largura": 466,
-        "altura": 1198
+        "altura": 1216
       },
       "posicoes_por_prova": {
         "azul": "159",
